@@ -7,15 +7,20 @@
 }
 /*Main content area*/
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #e6f9e4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f9e4;
   color: #333;
+}
+.comntainer {
+  width: 100%;
+  height: 100%;
 }
 /*Header*/
 header {
