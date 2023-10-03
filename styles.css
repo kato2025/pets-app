@@ -26,7 +26,7 @@ header {
 #siteLogo {
   margin: var(--small-margin) 0px var(--small-margin) 0px;
   width: 150px;
-  height: auto;
+  height: 80px;
 }
 #mainHeading {
   margin-top: -5px;
@@ -113,11 +113,6 @@ header {
 }
 /*Footer*/
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: calc(var(--small-margin) - 5px);
   padding: 10px;
   color: var(--yellowish);
@@ -126,6 +121,7 @@ footer {
 /*Developer name*/
 #developer,
 #email {
+  text-align: center;
   font-size: var(--medium-font-size);
 }
 #developer {
