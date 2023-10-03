@@ -3,6 +3,7 @@
   --light-green: #009688;
   --yellowish: #f7f712;
   --medium-font-size: 20px;
+  --large-font-size: 35px;
   --small-margin: 10px;
 }
 /*Main content area*/
@@ -41,26 +42,26 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .fetch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 #searchInput {
   padding: 10px;
-  width: 57%;
+  width: 37%;
   height: 25px;
-  font-size: calc(var(--medium-font-size) + 2px);
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 #fetchButton {
-  padding: 10px 20px;
-  width: 169px;
+  width: 20%;
   height: 48px;
-  font-size: var(--medium-font-size);
+  font-weight: bold;
   color: var(--yellowish);
   background-color: var(--light-green);
   border: none;
@@ -72,6 +73,7 @@ header {
 #searchInput {
   margin-top: var(--small-margin);
   margin-bottom: calc(var(--small-margin) + 10px)x;
+  font-size: var(--large-font-size);
 }
 #fetchButton:hover {
   background-color: #00796b;
@@ -85,7 +87,6 @@ header {
 #progress-container {
   margin-top: calc(var(--small-margin) - 6px);
   width: 100%;
-  max-width: 460px;
   height: 10px;
   background-color: #ccc;
   border-radius: 5px;
@@ -124,13 +125,9 @@ footer {
   padding: 10px;
   color: var(--yellowish);
   background-color: var(--light-green);
-}
-/*Developer name*/
-#developer,
-#email {
   text-align: center;
-  font-size: var(--medium-font-size);
+  font-size: var(--large-font-size);
 }
 #developer {
-  margin-bottom: -8px;
+  margin-bottom: -25px;
 }
