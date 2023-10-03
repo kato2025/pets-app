@@ -1,133 +1,125 @@
-/*Custome properties*/
-:root {
-  --light-green: #009688;
-  --yellowish: #f7f712;
-  --medium-font-size: 20px;
-  --small-margin: 10px;
-}
-/*Main content area*/
-body {
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
   margin: 0;
-  width: 100%;
-  height: 100vh;
-  font-family: 'Arial', sans-serif;
+  padding: 0;
+}
+
+/* Set base font size and font family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Main content area */
+body {
   background-color: #e6f9e4;
   color: #333;
-}
-/*Header*/
-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: calc(var(--small-margin) - 5px);
-  background-color: var(--light-green);
+  height: 100vh;
 }
-#siteLogo {
-  margin: var(--small-margin) 0px var(--small-margin) 0px;
-  width: 150px;
-  height: auto;
-}
+
+/* Site heading */
 #mainHeading {
-  margin-top: -5px;
-  margin-bottom: calc(var(--small-margin) + 10px);
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: calc(var(--medium-font-size) * 2);
-  color: var(--light-green);
+  color: #009688;
 }
-/*Search pet*/
+
+/* Search input and button */
 .search {
+  width: 80%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
+
 #searchInput {
-  font-size: calc(var(--medium-font-size) + 2px);
+  width: 100%;
+  font-size: 16px;
   padding: 10px;
-  width: 57%;
-  height: 25px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: calc(var(--small-margin) + 10px)x;
+  box-sizing: border-box;
 }
+
 #fetchButton {
-  margin-top: var(--small-margin);
-  padding: 10px 20px;
-  width: 169px;
-  height: 48px;
-  font-size: var(--medium-font-size);
-  color: var(--yellowish);
-  background-color: var(--light-green);
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  background-color: #009688;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
+
 #fetchButton:hover {
   background-color: #00796b;
 }
-/*Error message*/
-#error-message {
-  color: #d32f2f;
-  margin-top: var(--small-margin);
+
+/* Loading message and progress bar */
+#loadingMessage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
-/*Loading message progressbar*/
+
 #progress-container {
-  margin-top: calc(var(--small-margin) - 6px);
   width: 100%;
-  max-width: 460px;
+  max-width: 300px;
   height: 10px;
   background-color: #ccc;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
+
 #progress-bar {
   height: 100%;
-  width: 100%;
-  background-color: var(--light-green);
+  width: 0;
+  background-color: #009688;
   border-radius: 5px;
   transition: width 0.3s ease;
 }
-#loadingMessage {
-  margin-top: var(--small-margin);
-  font-size: var(--medium-font-size);
-  margin-bottom: var(--small-margin);
-}
-/*Main content*/
+
+/* Gif container */
 .container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: calc(var(--small-margin) + 10px);
-  height: auto;
+  width: 80%;
+  max-width: 300px;
   text-align: center;
+  margin-top: 20px;
 }
-/*Loaded Gif image*/
+
 #gifImage {
-  width: 60%;
-  min-width: 0%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-top: calc(var(--small-margin) + 10px);
   box-shadow: 0px 4px 8px #0000001a;
 }
-/*Footer*/
+
+/* Error message */
+#error-message {
+  color: #d32f2f;
+  margin-top: 10px;
+}
+
+/* Footer */
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: calc(var(--small-margin) - 5px);
-  padding: 10px;
-  color: var(--yellowish);
-  background-color: var(--light-green);
+  margin-top: 20px;
+  text-align: center;
 }
-/*Developer name*/
-#developer,
-#email {
-  font-size: var(--medium-font-size);
-}
-#developer {
-  margin-bottom: -8px;
+
+/* Developer info */
+#developer, #email {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #009688;
 }
