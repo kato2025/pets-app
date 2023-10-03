@@ -2,38 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Gifs</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Site heading -->
+    <!--Site logo in header-->
+    <header>
+      <img id="siteLogo" src="siteLogo.png" alt="">
+    </header>
+    <!--Site heading-->
     <h1 id="mainHeading">Relax with pets</h1>
-    <!-- Search input -->
+    <!--Search input-->
     <div class="search">
       <div class="fetch">
         <input type="text" id="searchInput" placeholder="Search for gifs...">
-        <!-- Search button -->
+        <!--Search button-->
         <button id="fetchButton">Fetch New Pet</button>
       </div>
-      <!-- Loading message -->
+      <!--Loading message-->
       <div id="loadingMessage">Loading pet please wait!</div>
-      <!-- Progress bar -->
+      <!--Progress bar-->
       <div id="progress-container">
         <div id="progress-bar"></div>
       </div>
-      <!-- Error message -->
+      <!--Error message-->
       <div id="error-message"></div>
-      <!-- Gif image -->
-      <div class="container">
-        <img id="gifImage">
-      </div>
+      <!--Gif image-->
     </div>
-    <!-- Footer -->
+    <div class="container">
+      <img id="gifImage">
+    </div>  
+    <!--Footer-->
     <footer>
       <p id="developer">Developed by Dr. Kato Samuel Namuene</p>
       <p id="email">Email: kato.namuene@ubuea.cm</p>
     </footer>
-    <script src="script.js" defer></script>
 </body>
 </html>
