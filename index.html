@@ -10,22 +10,27 @@
  
     <!--Site logo in header-->
     <header>
-      <img src="siteLogo.png" alt="">
+      <img id="siteLogo" src="siteLogo.png" alt="">
     </header>
     <!--Site heading-->
-    <h1>Relax with pets</h1>
-    <input type="text" id="searchInput" placeholder="Search for gifs...">
-    <!--Search button-->
-    <button id="fetchButton">Fetch New Pet</button>
-    <!--Loading message-->
-    <div id="loadingMessage">Loading pet please wait!</div>
-    <!--Progress bar-->
-    <div id="progress-container">
-      <div id="progress-bar"></div>
+    <h1 id="mainHeading">Relax with pets</h1>
+    <!--Search input-->
+    <div class="search">
+      <div class="fetch">
+        <input type="text" id="searchInput" placeholder="Search for gifs...">
+        <!--Search button-->
+        <button id="fetchButton">Fetch New Pet</button>
+      </div>
+      <!--Loading message-->
+      <div id="loadingMessage">Loading pet please wait!</div>
+      <!--Progress bar-->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <!--Error message-->
+      <div id="error-message"></div>
+      <!--Gif image-->
     </div>
-    <!--Error message-->
-    <div id="error-message"></div>
-    <!--Gif image-->
     <div class="container">
       <img id="gifImage">
     </div>  

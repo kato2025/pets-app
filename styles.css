@@ -7,10 +7,6 @@
 }
 /*Main content area*/
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -27,17 +23,25 @@ header {
   margin-bottom: calc(var(--small-margin) - 5px);
   background-color: var(--light-green);
 }
-.comntainer {
-  width: 100%;
-  height: 100%;
+#siteLogo {
+  margin: var(--small-margin) 0px var(--small-margin) 0px;
+  width: 12%;
+  height: auto;
 }
-h1 {
+#mainHeading {
   margin-top: -5px;
-  font-size: calc(var(--medium-font-size) * 2);
   margin-bottom: calc(var(--small-margin) + 10px);
+  text-align: center;
+  font-size: calc(var(--medium-font-size) * 2);
   color: var(--light-green);
 }
 /*Search pet*/
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 #searchInput {
   font-size: calc(var(--medium-font-size) + 2px);
   padding: 10px;
@@ -70,7 +74,7 @@ h1 {
 #progress-container {
   margin-top: calc(var(--small-margin) - 6px);
   width: 100%;
-  max-width: 400px;
+  max-width: 495px;
   height: 10px;
   background-color: #ccc;
   border-radius: 5px;
@@ -89,21 +93,17 @@ h1 {
   margin-bottom: var(--small-margin);
 }
 /*Main content*/
-img {
-  margin: var(--small-margin) 0px var(--small-margin) 0px;
-  max-width: 30%;
-  height: auto;
-}
 .container {
+  display: flex;
+  justify-content: center;
   margin-bottom: calc(var(--small-margin) + 10px);
-  width: 50%;
   height: auto;
   text-align: center;
 }
 /*Loaded Gif image*/
 #gifImage {
-  width: 100%;
-  max-width: 400px;
+  width: 60%;
+  min-width: 0%;
   height: auto;
   border-radius: 10px;
   margin-top: calc(var(--small-margin) + 10px);
