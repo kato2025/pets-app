@@ -12,8 +12,8 @@ body {
   width: 100%;
   height: 100vh;
   font-family: 'Arial', sans-serif;
-  background-color: #e6f9e4;
   color: #333;
+  background-color: #e6f9e4;
 }
 /*Header*/
 header {
@@ -26,8 +26,8 @@ header {
 }
 #siteLogo {
   margin: var(--small-margin) 0px var(--small-margin) 0px;
-  width: 150px;
-  height: 80px;
+  width: 200px;
+  height: 110px;
 }
 #mainHeading {
   margin-top: -5px;
@@ -80,8 +80,8 @@ header {
 }
 /*Error message*/
 #error-message {
-  color: #d32f2f;
   margin-top: var(--small-margin);
+  color: #d32f2f;
 }
 /*Loading message progressbar*/
 #progress-container {
@@ -101,8 +101,8 @@ header {
 }
 #loadingMessage {
   margin-top: var(--small-margin);
-  font-size: var(--medium-font-size);
   margin-bottom: var(--small-margin);
+  font-size: var(--medium-font-size);
 }
 /*Main content*/
 .container {
@@ -114,9 +114,10 @@ header {
 }
 /*Loaded Gif image*/
 #gifImage {
+  margin-top: calc(var(--small-margin) + 10px);
+  width: 30%;
   height: auto;
   border-radius: 10px;
-  margin-top: calc(var(--small-margin) + 10px);
   box-shadow: 0px 4px 8px #0000001a;
 }
 /*Footer*/
@@ -126,7 +127,7 @@ footer {
   color: var(--yellowish);
   background-color: var(--light-green);
   text-align: center;
-  font-size: var(--large-font-size);
+  font-size: calc(var(--large-font-size) - 7px);
 }
 #developer {
   margin-bottom: -25px;
